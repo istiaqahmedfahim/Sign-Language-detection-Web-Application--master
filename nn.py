@@ -138,8 +138,8 @@ def update_text_field(text):
 
     
 # Streamlit GUI
-st.title("ASL Prediction Application")
-tabs = st.tabs(["Home", "Sign Detection", "About"])
+st.title("ASL to :green[Bengali] translation Application :wave:")
+tabs = st.tabs(["Home", "Sign Translation", "About"])
 # --- Home Tab ---
 with tabs[0]:
     st.title("Welcome to Hand Sign Detection")
@@ -152,7 +152,7 @@ with tabs[0]:
     """)
 
 with tabs[1]:
-    st.title("Real-Time Hand Sign Detection")
+    st.title(":green[Real-Time] Hand Sign Translation")
     st.markdown("""
     To begin detecting hand signs, click the "Start Detection" button below.
     The system will display predictions in real-time and show them in text format.
@@ -262,10 +262,10 @@ with tabs[1]:
             # Initialize the text area outside the loop to avoid DuplicateWidgetID issue
             # Generate a custom key using uuid or a timestamp to make sure it is unique
             custom_key1 = f"text_output_{uuid.uuid4()}"
-            text_area_placeholder1.text_area('English Text Conversion', current_text, key=custom_key1)
+            text_area_placeholder1.text_area('English Text Conversion :', current_text, key=custom_key1)
             
             custom_key2 = f"text_output_{uuid.uuid4()}"
-            text_area_placeholder2.text_area('Bangla Text Conversion', transformed_sentence, key=custom_key2)
+            text_area_placeholder2.text_area('Bangla Text Conversion :', transformed_sentence, key=custom_key2)
             
 
             if cv2.waitKey(1) & 0xFF == ord('q'):
