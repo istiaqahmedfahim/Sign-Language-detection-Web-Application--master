@@ -38,7 +38,7 @@ phonetic_mapping = {
     "e": "এ", "oi": "ঐ", "o": "ও", "ou": "ঔ",
     "k": "ক", "kh": "খ", "g": "গ", "gh": "ঘ", "ng": "ঙ",
     "c": "চ", "ch": "ছ", "j": "জ", "jh": "ঝ", "ny": "ঞ",
-    "t": "ট", "th": "ঠ", "d": "ড", "dh": "ঢ", "n": "ন",
+    "t": "ট", "th": "ঠ", "d": "দ", "dh": "ঢ", "n": "ন",
     "p": "প", "ph": "ফ", "b": "ব", "bh": "ভ", "m": "ম",
     "r": "র", "l": "ল", "sh": "শ", "ss": "ষ", "s": "স", "h": "হ",
     # More consonants and mappings can be added here...
@@ -47,7 +47,7 @@ phonetic_mapping = {
 # Diacritics mapping for consonants followed by vowels (including three-letter cases)
 diacritics_mapping = {
     "ma": "মা", "ki": "কি", "kii": "কী", "ku": "কু", "kuu": "কূ","aa": "আ",
-    "ke": "কে", "kai": "কৈ", "ko": "কো", "kou": "কৌ",
+    "ke": "কে", "kai": "কৈ", "ko": "ক", "kou": "কৌ", "dho":"ধ", "nno":"ন্য" , "ba": "বা",
     "kha": "খা", "khi": "খি", "khii": "খী", "khu": "খু", "khuu": "খূ","tha":"থা","shu": "শু","nu": "নু"
     # Add diacritic mappings for other consonants...
 }
